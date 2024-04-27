@@ -1,0 +1,36 @@
+/* some basic styling */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #E7F6FF;
+}
+
+header {
+  padding: .5rem 0;
+}
+
+nav {
+  border: 1px solid gray;
+}
+
+section {
+  /* sections have a light grey background */
+  background-color: #ccc;
+  margin: .5rem 0;
+  padding: .5rem;
+}
+
+footer {
+  padding-top: 1rem;
+  font-size: 80%;
+}
+
+.citation {
+  text-decoration: none; 
+  font-size: smaller; /* Makes the number smaller */
+  vertical-align: super;
+}
+
+img{
+  max-width: 400px;
+}
+
