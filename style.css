@@ -1,0 +1,172 @@
+
+
+/* The font for the whole body of the document will be "Nunito Sans" at a size of 16px, 
+with Arial and sans serif as fallback fonts. */
+body{
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* All headings will have the font "Raleway" 
+with a "light" weight of 300, with Helvetica and sans serif as fallback fonts. */
+/* Headings have no margin on the top (a margin of 0), but have .5rem margins on the bottom */
+
+/* Top-level headings will have a font-size of 3.5 times the size of the root element font 
+(so using the rem unit), and second-level headings will have a font-size of 2 times the size 
+of the root element font. */
+h1{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 3.5rem;
+}
+h2{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+/* In order to make the icons better line up with their surrounding text, 
+give them a relative position
+that is 5px below the top of their normal placement in the content flow. */
+.material-icons{
+    position: relative;
+    top: 5px;
+}
+
+/* Each .container element (containing the content) will need to have a maximum width of 960px. 
+Additionally, give each a margin-left and margin-right value of auto. 
+This will cause the container to act as a single "column" of content centered within the page, 
+no matter how wide the browser gets. */
+/* Additionally, .container elements have padding all around equal to the height of the root element font. */
+.container{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+/* Paragraphs and descriptive lists (the major content elements) 
+should also have no margin on the top, but have 1rem margin on the bottom. */
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+dl{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* The Nav Bar */
+/* The navbar needs to have its positionLinks to an external site. 
+fixed to the top-left corner of the screen, 
+and a width that spans 100% of its parent element (so it goes across the whole page). */
+nav{
+    position: fixed;
+    top: left;
+    width: 100%;
+    /* white text on background color #2C96BF */
+    color: white; 
+    background-color: #410d60;
+    /* padding all around around .5 rem bottom 1 rem */
+    padding: .5rem;
+    padding-bottom: 1rem;
+    /* The list of hyperlinks inside of the navbar has no (0) additional margin or padding around it.  */
+    ul{
+        padding:0;
+        margin:0;
+    }
+}
+
+/* 
+The list items in this list have an inline displayLinks to an external site. 
+(instead of the default block display). 
+Each list item has 0 margin on the top and bottom, but 1rem margins on the sides. 
+Use a shorthand property to specify the margins for the list items using a single property declaration. */
+li{
+    display: inline;
+    /* top | right | bottom | left */
+    /* top and bottom | left and right */ 
+    margin: 0rem 1rem;
+
+    /* The hyperlinks inside of the navbar's list are colored black, 
+    and are not underlinedLinks to an external site.. */
+    a:link{
+        color: rgb(250, 249, 249);
+        text-decoration: none;
+    }
+    /* However, when you hover or focus (or activate) these hyperlinks, their color should change to #F0F0F0 
+    (a very very light gray), and should be given a bottom border of the same color that is .8rem thick. 
+    This will cause them to look like they are underlined when you hover over them, 
+    indicating that they can be clicked. */
+    a:hover{
+        color: #ff00d9;
+        border-bottom: solid #F0F0F0 .2rem;
+    }
+    
+}
+/* all text in header is white */
+/* padding is 6x rem top rem for bottom */
+header{
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    background-image: url("img/header-background.jpeg");
+    background-color:#0084Af;
+    background-size:cover;
+
+}
+
+ /* The motto paragraph ("Caffeinating sleepy Huskies since 2018") should be styled in italics
+    and 1.25x the size of the root element's height. */
+.motto{
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+#menu{
+    background-color:#f0f0f0;
+    background-size: cover;
+    dt{
+        font-size: 1.25rem;
+        font-style: bold;
+        margin-top: 1rem;
+    }
+    dd{
+        margin: 0;
+    }
+    img{
+        height: 200px;
+        border-radius: 15px;
+    }
+}
+
+#about{
+    background-color: #e0e0e0;
+    line-height: 1.5;
+}
+
+footer{
+    color: white;
+    background-color: #330561;
+    a:link{
+        color: white;
+        text-decoration: none;
+    }
+    line-height: 1.25;
+    
+    p{
+        margin: 0;
+    }
+    p:last-of-type{
+        padding-top: 8px;
+    }
+    
+}
+
+
+
